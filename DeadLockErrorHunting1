@@ -12,7 +12,7 @@ While playing deadlock.
 Mid match I have been dc'd during game and will now be using console logging to generate files to be able to 
 
 ERROR SPECIFICS:
-STEAMAUTH: Client Tacobell Employee received failure code 6
+STEAMAUTH: Client "Username" received failure code 6
 
 =================
 2-7-26
@@ -26,7 +26,7 @@ common issue for sudden disconnects but wanted to investigate further with the s
 
 So takes us to my next error code:
 
-[SteamNetSockets] [#3126470666 SDR server steamid:90281173733143556 vport 0 'server'] closed by peer (2009): NETWORK_DISCONNECT_STEAM_LOGON
+[SteamNetSockets] [#3126470666 SDR server steamid:9########... vport 0 'server'] closed by peer (2009): NETWORK_DISCONNECT_STEAM_LOGON
 
 I noticed this code after catching the console
 (Yes I was watching it in real time while playing a bot mach)
