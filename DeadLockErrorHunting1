@@ -21,8 +21,8 @@ STEAMAUTH: Client Tacobell Employee received failure code 6
 
 First attempt at trying to parse what was going on didn't seem to go too well. As I didn't catch anything while attempting to run a
 bot match and figure out the issue. I was promptly disconnected and everything seem like normal loading between lobbies from
-the connection server to the actual lobby. Still the SteamAuth Issue was concerning so I looked further into it and noticed
-That this was a common issue for sudden disconnects but wanted to investigate further with the situation.
+the connection server to the actual lobby. Still the SteamAuth Issue was concerning so I looked further into it and noticed that this was a
+common issue for sudden disconnects but wanted to investigate further with the situation.
 
 So takes us to my next error code:
 
@@ -37,4 +37,27 @@ is having failure to log on due to an issue
 being parsed by the server. 
 I'll have to continue investigations.
 
+=================
+2-7-26
+22:15
+=================
 
+My first theroy given the logs and given my pc set up situation was that a dual logon conflict was happening.
+As a gamer, I enjoy changing my name to silly stuff other than my user name such but not limited to:
+"Tacobell Emplyoee"
+"Shumbin"
+"Tiny Bat"
+And many more.
+
+I also have a 2 pc setup, one for VR based games and one for pc games and general work flow and coding projects and Analysis.
+
+Come to find out Deadlock can't seem to parse the two instances of having a username for steam logged in multiple places and was creating a mismatch and after
+turning off my second pc and relogging into steam on my primary pc, that seemed to fix the issue.
+
+This would be an important thing to note for any streamers who may change their steam name frequently AND use a dual pc streaming set up and may be an issue in other games
+however this is the only game where I've personally had this issue. 
+
+My suggestion to anyone having this issue would be to log out of steam off all other devices, set your name on steam, relog and then try playing a full bot match to confrim issues.
+
+Please check images for additional context!
+Thanks for reading
