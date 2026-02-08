@@ -1,0 +1,38 @@
+DEADLOCK ERROR HUNTING
+=================
+2-7-26
+21:05
+=================
+
+
+To whom it may concern:
+
+I have been having issues with a STEAMAUTH issue regarding the authentication of my client for steam with a failure 
+While playing deadlock.
+Mid match I have been dc'd during game and will now be using console logging to generate files to be able to 
+
+ERROR SPECIFICS:
+STEAMAUTH: Client Tacobell Employee received failure code 6
+
+=================
+2-7-26
+21:22
+=================
+
+First attempt at trying to parse what was going on didn't seem to go too well. As I didn't catch anything while attempting to run a
+bot match and figure out the issue. I was promptly disconnected and everything seem like normal loading between lobbies from
+the connection server to the actual lobby. Still the SteamAuth Issue was concerning so I looked further into it and noticed
+That this was a common issue for sudden disconnects but wanted to investigate further with the situation.
+
+So takes us to my next error code:
+
+[SteamNetSockets] [#3126470666 SDR server steamid:90281173733143556 vport 0 'server'] closed by peer (2009): NETWORK_DISCONNECT_STEAM_LOGON
+
+I noticed this code after catching the console
+(Yes I was watching it in real time while playing a bot mach)
+and caught the message SOS: and decided to follow it.
+
+Which this would mean that my steam account
+is having failure to log on due to an issue
+being parsed by the server. 
+I'll have to continue investigations.
